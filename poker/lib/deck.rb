@@ -15,6 +15,12 @@ class Deck
       end 
     end 
   end
+  
+  def shuffle
+    @cards.shuffle!
+  end
+  
+  
 end
 
 if __FILE__ == $PROGRAM_NAME
