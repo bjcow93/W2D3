@@ -1,5 +1,5 @@
 class Card 
-  attr_accessor =>suit, =>value
+  attr_accessor :suit, :value
   
   SUITS = %w(♣️ ♥️ ♦️ ♠️)
   VALUES = {
@@ -23,5 +23,19 @@ class Card
     @suit = suit
     @value = value
   end 
+  
+  
+  def self.suits 
+    SUITS 
+  end 
+  
+  def self.keys
+    VALUES.keys
+  end
+  
+  def inspect
+    "#{self.suit} #{self.value}"
+  end
+  
   
 end
