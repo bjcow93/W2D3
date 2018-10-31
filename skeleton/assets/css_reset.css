@@ -26,6 +26,7 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1.5;
   font-family: Arial, sans-serif;
+  background-color: LightSkyBlue;
 }
 ol, ul {
   list-style: none;
@@ -57,5 +58,7 @@ ol {
 header img {
   width: 100px;
 }
-
+ul li a {
+  
+}
  
