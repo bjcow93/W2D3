@@ -20,6 +20,13 @@ RSpec.describe do
       it "contains Card objects" do 
         expect(deck.cards.sample.class).to be(Card)
       end 
+    end 
+    
+    describe "shuffle_deck" do
+      it "should shuffle the cards in the deck" do
+        allow(deck).to receive(:shuffle_deck)
+        deck.shuffle_deck
+      end
     end
   end 
 end
