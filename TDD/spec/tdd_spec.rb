@@ -52,6 +52,6 @@ RSpec.describe do
       expect(stock_picker([7,5,2,3,11])).to eq([2,4])
     end
   end
-
+  
   
 end 
