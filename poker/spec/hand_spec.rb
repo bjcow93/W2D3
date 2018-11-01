@@ -3,7 +3,8 @@ require "rspec"
 
 RSpec.describe do
   describe "Hand" do
-    subject(:hand) {Hand.new}
+    let(:deck) {double("deck")} 
+    subject(:hand) {Hand.new(deck)}
     describe "#initialize" do
       it "initalizes hand with an empty array" do
         expect(hand.cards).to eq([])

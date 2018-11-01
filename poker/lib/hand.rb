@@ -6,11 +6,11 @@ class Hand
   
   def initialize(deck)
     @cards = []
-    @deck = deck.cards
+    @deck = deck
   end
   
   def take_card(num)
-    num.times {@cards << @deck.pop}
+    num.times {@cards << @deck.cards.pop}
   end
   
   def high_card
